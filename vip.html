@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>vip video page</title>
+        <script>
+            function playVideo()
+            {
+                var urlVideo = document.getElementById("vipChoose").value + document.getElementById("vipUrl").value;
+                //alert(urlVideo);
+                window.open(urlVideo);
+            }
+        </script>
+        <style>
+            #videoDiv {
+                display: none;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+            #videoIframe {
+                    height: 100%;
+                    width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 style="text-align: center;">VIP source</h1>
+        <div>
+        <form>
+        VIP List: <input id="vipChoose" type="url" list="url_list" name="link" style="width:15%"/>
+        <datalist id="url_list">
+            <option label="VIP1" value="https://cdn.yangju.vip/k/?url="/>
+            <option label="VIP2" value="https://jx.lache.me/cc/?url=" />
+            <option label="VIP3" value="https://api.653520.top/vip/?url="/>
+            <option label="VIP4" value="https://jx.ab33.top/vip/?url="/>
+            <option label="VIP5" value="https://vip.mpos.ren/v/?url="/>
+            <option label="VIP6" value="https://jx.000180.top/jx/?url="/>
+            <option label="VIP0" value="https://jx.km58.top/jx/?url="/>
+        </datalist>
+        <input type="text" id="vipUrl" title="input vip video url" style="width: 70%;">
+        <input type="submit" onclick="playVideo()" />
+        </form>
+        </div>
+        <!--
+        <div id="videoDiv">
+        <iframe id="videoIframe" src="https://jx.km58.top/jx/?url=http://v.youku.com/v_show/id_XMzk0MTM2Mjk0OA==.html?spm=a2hmv.20009921.yk-slide-86993.5~5!13~5~5!2~A">
+        </div>
+        -->
+    </body>
+</html>
+
+
+<!--
+
+https://cdn.yangju.vip/k/?url=
+https://jx.lache.me/cc/?url=
+https://api.653520.top/vip/?url=
+https://jx.ab33.top/vip/?url=
+https://vip.mpos.ren/v/?url=
+https://jx.000180.top/jx/?url=
+https://jx.km58.top/jx/?url=
+
+-->
